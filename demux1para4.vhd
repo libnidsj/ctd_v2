@@ -12,6 +12,12 @@ END demux1para4;
 ARCHITECTURE arch OF demux1para4 IS
 BEGIN
 
+    -- WITH sel SELECT
+    -- a <= f when "00";
+    -- b <= f when "01";
+    -- c <= f when "10";
+    -- d <= f when "11";
+    
     a <= f when sel = "00" else
          0;
     
