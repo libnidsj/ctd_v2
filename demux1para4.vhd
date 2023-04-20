@@ -18,16 +18,26 @@ BEGIN
     -- c <= f when "10";
     -- d <= f when "11";
     
-    a <= f when sel = "00" else
-         0;
+    if (sel = "00") then
+        a <= f;
+    elsif (sel = "01") then
+        b <= f;
+    elsif (sel = "10") then
+        c <= f;
+    else
+        d <= f;
+    end if;
     
-    b <= f when sel = "01" else
-         0;
+    -- a <= f when sel = "00" else
+    --      0;
+    
+    -- b <= f when sel = "01" else
+    --      0;
          
-    c <= f when sel = "10" else
-         0;
+    -- c <= f when sel = "10" else
+    --      0;
          
-    d <= f when sel = "11" else
-         0;
+    -- d <= f when sel = "11" else
+    --      0;
          
 END arch;
