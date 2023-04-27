@@ -1,0 +1,20 @@
+--------------- dados do aluno ---------------
+nome: João Marcos Marqueti
+matricula: 21102176
+nome: Líbni da Silva Júnior
+matricula: 21102178
+
+--------------- dados do fpga ----------------
+familia: Cyclone III 
+dispositivo: EP3C5E144C7
+
+-------- dados de utilizacao da placa --------
+total combinational functions: 4
+dedicates logic registers: 0
+total pins: 7
+
+-------------- dados de atraso ---------------
+input port: f 
+output port: a
+atraso (ns): 4.940
+RR, RF, FR, FF: FF
