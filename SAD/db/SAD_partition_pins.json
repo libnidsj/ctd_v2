@@ -1,0 +1,169 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "pronto",
+					"strict" : false
+				},
+				{
+					"name" : "endereco[0]",
+					"strict" : false
+				},
+				{
+					"name" : "endereco[1]",
+					"strict" : false
+				},
+				{
+					"name" : "endereco[2]",
+					"strict" : false
+				},
+				{
+					"name" : "endereco[3]",
+					"strict" : false
+				},
+				{
+					"name" : "endereco[4]",
+					"strict" : false
+				},
+				{
+					"name" : "endereco[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SAD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SAD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SAD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SAD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SAD[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SAD[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SAD[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SAD[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SAD[8]",
+					"strict" : false
+				},
+				{
+					"name" : "SAD[9]",
+					"strict" : false
+				},
+				{
+					"name" : "SAD[10]",
+					"strict" : false
+				},
+				{
+					"name" : "SAD[11]",
+					"strict" : false
+				},
+				{
+					"name" : "SAD[12]",
+					"strict" : false
+				},
+				{
+					"name" : "SAD[13]",
+					"strict" : false
+				},
+				{
+					"name" : "iniciar",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "Mem_A[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Mem_B[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Mem_A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Mem_B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Mem_A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Mem_B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Mem_A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Mem_B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Mem_A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Mem_B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Mem_A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Mem_B[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Mem_A[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Mem_B[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Mem_A[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Mem_B[6]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

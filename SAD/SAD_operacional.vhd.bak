@@ -1,0 +1,13 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY SAD_operacional IS
+	PORT(
+
+);
+END SAD_operacional;
+
+ARCHITECTURE Behavior OF SAD_operacional IS
+	
+	
+END Behavior;
