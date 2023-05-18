@@ -21,9 +21,8 @@ architecture tb of testbench is
 	
 	signal SAD: std_logic_vector(13 downto 0);
 
-CONSTANT passo : TIME := 5 ns;
+CONSTANT passo : TIME := 20 ns;
 CONSTANT half_period : time := 5 ns;
-CONSTANT total_delay : TIME := 2100 ns;
 
 begin
 
@@ -38,85 +37,37 @@ end process;
 
 process
 begin
-	input <= std_logic_vector(to_unsigned(0, input'length));
+	reset <= '0';
 	wait for passo;
-	assert(output="0000001")
+	reset <= '1';
+	Mem_A <= "10000000";
+	Mem_B <= "00000000";
+	iniciar <= '0';
+	wait for passo;
+	iniciar <= '1';
+	wait on pronto;
+	assert(SAD="10000000000000")
 	report "Fail 0" severity error;
 
-	input <= std_logic_vector(to_unsigned(1, input'length));
 	wait for passo;
-	assert(output="1001111")
+	Mem_A <= "00000000";
+	Mem_B <= "10000000";
+	iniciar <= '0';
+	wait for passo;
+	iniciar <= '1';
+	wait on pronto;
+	assert(SAD="10000000000000")
 	report "Fail 1" severity error;
-
-	input <= std_logic_vector(to_unsigned(2, input'length));
+	
 	wait for passo;
-	assert(output="0010010")
+	Mem_A <= "00000000";
+	Mem_B <= "00000000";
+	iniciar <= '0';
+	wait for passo;
+	iniciar <= '1';
+	wait on pronto;
+	assert(SAD="00000000000000")
 	report "Fail 2" severity error;
-
-	input <= std_logic_vector(to_unsigned(3, input'length));
-	wait for passo;
-	assert(output="0000110")
-	report "Fail 3" severity error;
-
-	input <= std_logic_vector(to_unsigned(4, input'length));
-	wait for passo;
-	assert(output="1001100")
-	report "Fail 4" severity error;
-
-	input <= std_logic_vector(to_unsigned(5, input'length));
-	wait for passo;
-	assert(output="0100100")
-	report "Fail 5" severity error;
-
-	input <= std_logic_vector(to_unsigned(6, input'length));
-	wait for passo;
-	assert(output="0100000")
-	report "Fail 6" severity error;
-
-	input <= std_logic_vector(to_unsigned(7, input'length));
-	wait for passo;
-	assert(output="0001111")
-	report "Fail 7" severity error;
-
-	input <= std_logic_vector(to_unsigned(8, input'length));
-	wait for passo;
-	assert(output="0000000")
-	report "Fail 8" severity error;
-
-	input <= std_logic_vector(to_unsigned(9, input'length));
-	wait for passo;
-	assert(output="0000100")
-	report "Fail 9" severity error;
-
-	input <= std_logic_vector(to_unsigned(10, input'length));
-	wait for passo;
-	assert(output="0110000")
-	report "Fail 10" severity error;
-
-	input <= std_logic_vector(to_unsigned(11, input'length));
-	wait for passo;
-	assert(output="0110000")
-	report "Fail 11" severity error;
-
-	input <= std_logic_vector(to_unsigned(12, input'length));
-	wait for passo;
-	assert(output="0110000")
-	report "Fail 12" severity error;
-
-	input <= std_logic_vector(to_unsigned(13, input'length));
-	wait for passo;
-	assert(output="0110000")
-	report "Fail 13" severity error;
-
-	input <= std_logic_vector(to_unsigned(14, input'length));
-	wait for passo;
-	assert(output="0110000")
-	report "Fail 14" severity error;
-
-	input <= std_logic_vector(to_unsigned(15, input'length));
-	wait for passo;
-	assert(output="0110000")
-	report "Fail 15" severity error;
 
 	wait for passo;
 	assert false report "Test done." severity note;
