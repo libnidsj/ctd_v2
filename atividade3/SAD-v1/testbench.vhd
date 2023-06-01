@@ -30,13 +30,17 @@ begin
 DUV: entity work.SAD_usertop
 port map(clk, iniciar, reset, pronto, endereco, Mem_A, Mem_B, SAD);
 
-clk_process :process
-begin
-   clk <= not clk after half_period;
+clk_process: process
+	begin
+		clk <= '0';
+		wait for half_period;
+		clk <= '1';
+		wait for half_period;
 end process;
 
-process
+main_process: process
 begin
+
 	reset <= '0';
 	wait for passo;
 	reset <= '1';
@@ -72,5 +76,6 @@ begin
 	wait for passo;
 	assert false report "Test done." severity note;
 	wait;
+	
 end process;
 end tb;
