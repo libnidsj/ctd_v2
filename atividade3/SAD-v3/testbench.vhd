@@ -85,14 +85,6 @@ begin
 				Mem_B <= "00000000000000000000000000000000";
 				wait on pronto;
 			end if;
-			
-			--if (end_bit = '1' and pronto = '0') then
-			--	while (pronto = '0') loop
-			--		Mem_A <= "00000000000000000000000000000000";
-			--		Mem_B <= "00000000000000000000000000000000";
-			--		wait on endereco;
-			--	end loop;
-			--end if;
 		
 		end loop;
 			
