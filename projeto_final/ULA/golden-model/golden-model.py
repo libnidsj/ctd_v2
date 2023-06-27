@@ -1,6 +1,6 @@
 import random
 
-numberoftests = 4
+numberoftests = 200
 
 def generate_random_binary():
     binary_number = 0
