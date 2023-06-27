@@ -1,0 +1,14 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY Div_operacional IS
+	PORT(
+	 
+);
+END Div_operacional;
+
+
+ARCHITECTURE Behavior OF Div_operacional IS
+
+
+END Behavior;

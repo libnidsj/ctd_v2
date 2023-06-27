@@ -1,0 +1,6 @@
+
+State Machine - |ULA_usertop|Multiplicador:ULA_Mult|Mul_controle:CONTROLE|EstadoAtual
+Name EstadoAtual.S2 EstadoAtual.S1 EstadoAtual.S0 
+EstadoAtual.S0 0 0 0 
+EstadoAtual.S1 0 1 1 
+EstadoAtual.S2 1 0 1 

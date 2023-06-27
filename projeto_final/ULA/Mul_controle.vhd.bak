@@ -1,0 +1,15 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY Div_controle IS
+	PORT(
+	 
+);
+END Div_controle;
+
+
+ARCHITECTURE Behavior OF Div_controle IS
+
+BEGIN
+
+END Behavior;

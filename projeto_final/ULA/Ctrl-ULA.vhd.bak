@@ -1,0 +1,16 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY Ctrl-ULA IS
+	PORT(
+	 funct in std_logic_vector (5 downto 0);
+	 ULAop in std_logic_vector (1 downto 0);
+	 sel out std_logic_vector (2 downto 0)
+);
+END Ctrl-ULA;
+
+
+ARCHITECTURE Behavior OF Ctrl-ULA IS
+
+
+END Behavior;

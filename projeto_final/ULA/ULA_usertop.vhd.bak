@@ -1,0 +1,17 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY ULA_usertop IS
+	PORT(
+	 clk IN STD_LOGIC;
+	 pronto: OUT STD_LOGIC;
+	 A , B: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+	 S: OUT STD_LOGIC_VECTOR (13 DOWNTO 0)
+);
+END ULA_usertop;
+
+
+ARCHITECTURE Behavior OF ULA_usertop IS
+
+
+END Behavior;
