@@ -9,6 +9,13 @@ def generate_random_binary():
         binary_number |= (bit << i)
     return binary_number
     
+def generate_random_31bit_binary():
+    binary_number = 0
+    for i in range(31):
+        bit = random.randint(0, 1)
+        binary_number |= (bit << i)
+    return binary_number
+    
 def generate_random_8bit_binary():
     binary_number = 0
     for i in range(8):
@@ -37,12 +44,10 @@ with open("estimulos.dat", "w") as file:
     
     # Perform 16 iterations for sub
     for _ in range(numberoftests):
-        number2 = 4294967295;
-        number1 = 1;
-        while(number2 + number1 > 4294967295):
-            # Generate random 32-bit binary numbers
-            number1 = generate_random_binary()
-            number2 = generate_random_binary()
+
+        # Generate random 32-bit binary numbers
+        number1 = generate_random_binary();
+        number2 = generate_random_binary()
         
         binary_sub = 0
         # if(number1 > number2):
@@ -91,16 +96,10 @@ with open("estimulos.dat", "w") as file:
         
     # Perform 16 iterations for slt
     for _ in range(numberoftests):
-        number2 = 4294967295;
-        number1 = 1;
-        while(number2 >= 4294967295 / 2 or number1 >= 4294967295 / 2):
-            # Generate random 32-bit binary numbers
-            number1 = generate_random_binary()
-            number2 = generate_random_binary()
-    
-        # Generate random 32-bit binary numbers
-        number1 = generate_random_binary()
-        number2 = generate_random_binary()
+
+        # Generate random 31-bit binary numbers
+        number1 = generate_random_31bit_binary()
+        number2 = generate_random_31bit_binary()
         
         binary_slt = 0
         if(number1 < number2):
